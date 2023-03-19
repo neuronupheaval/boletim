@@ -17,10 +17,6 @@ namespace Boletim
                 // Binding data to Repeater.
                 rptAlunos.DataSource = BoletinsAlunos.Dados.OrderBy(o => o.NomeAluno).ThenBy(t => t.Materia).GroupBy(g => g.NomeAluno);
                 rptAlunos.DataBind();
-
-                // Binding data to Grid View.
-                gvBoletim.DataSource = BoletinsAlunos.Dados;
-                gvBoletim.DataBind();
             }
         }
     }
