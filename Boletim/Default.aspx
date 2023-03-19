@@ -10,7 +10,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:GridView ID="gvBoletim" runat="server" EmptyDataText="Nenhum aluno encontrado!">
+            <asp:GridView ID="gvBoletim" runat="server" AutoGenerateColumns="false" EmptyDataText="Nenhum aluno encontrado!">
                 <Columns>
                     <asp:BoundField DataField="Materia" HeaderText="Matéria" />
                     <asp:BoundField DataField="Nota1" HeaderText="1a. Nota" ItemStyle-HorizontalAlign="Right" />
