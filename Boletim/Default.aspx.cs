@@ -25,6 +25,8 @@ namespace Boletim
             RepeaterItem repeaterItem = e.Item;
 
             var gridView = repeaterItem.Controls.OfType<GridView>().Single(); // <-- Looking for a reference to the Grid View within the Repeater Item Template.
+
+            gridView.Caption = (repeaterItem.DataItem as IGrouping<string, BoletimAlunoItem>).Key; // <-- Get the name of the Aluno and bind it to the Grid View's Caption.
             gridView.DataSource = repeaterItem.DataItem;
             gridView.DataBind();
         }

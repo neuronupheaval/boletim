@@ -27,8 +27,6 @@
             <asp:Repeater ID="rptAlunos" runat="server" OnItemDataBound="rptAlunos_ItemDataBound">
                 <ItemTemplate>
                     <hr />
-                    <asp:Label ID="lblNome" runat="server" Text='<%# Eval("Key") %>' />
-                    <br />
                     <asp:GridView ID="gvBoletim" runat="server" AutoGenerateColumns="false" EmptyDataText="Nenhum aluno encontrado!">
                         <Columns>
                             <asp:BoundField DataField="Materia" HeaderText="Matéria" />
