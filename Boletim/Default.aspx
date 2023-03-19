@@ -24,7 +24,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:Repeater ID="rptAlunos" runat="server">
+            <asp:Repeater ID="rptAlunos" runat="server" OnItemDataBound="rptAlunos_ItemDataBound">
                 <ItemTemplate>
                     <hr />
                     <asp:Label ID="lblNome" runat="server" Text='<%# Eval("Key") %>' />

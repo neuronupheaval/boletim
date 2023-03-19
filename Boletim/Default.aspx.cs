@@ -19,5 +19,14 @@ namespace Boletim
                 rptAlunos.DataBind();
             }
         }
+
+        protected void rptAlunos_ItemDataBound(object sender, RepeaterItemEventArgs e) // <-- Event handler for when each RepeaterItem is bound to an item in the data source.
+        {
+            RepeaterItem repeaterItem = e.Item;
+
+            var gridView = repeaterItem.Controls.OfType<GridView>().Single(); // <-- Looking for a reference to the Grid View within the Repeater Item Template.
+            gridView.DataSource = repeaterItem.DataItem;
+            gridView.DataBind();
+        }
     }
 }
