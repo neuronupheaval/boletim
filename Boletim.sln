@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32819.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Boletim", "Boletim\Boletim.csproj", "{B3898C5D-5EE5-4380-9BF3-58F67EB1D05F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Boletim.BLL", "Boletim.BLL\Boletim.BLL.csproj", "{DD2EB9D9-1413-4D99-9129-C9BDC4918E24}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B3898C5D-5EE5-4380-9BF3-58F67EB1D05F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3898C5D-5EE5-4380-9BF3-58F67EB1D05F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3898C5D-5EE5-4380-9BF3-58F67EB1D05F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3898C5D-5EE5-4380-9BF3-58F67EB1D05F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD2EB9D9-1413-4D99-9129-C9BDC4918E24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD2EB9D9-1413-4D99-9129-C9BDC4918E24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD2EB9D9-1413-4D99-9129-C9BDC4918E24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD2EB9D9-1413-4D99-9129-C9BDC4918E24}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5FB1B54E-FFB2-49D7-8CC3-0F93BFADE803}
+	EndGlobalSection
+EndGlobal
