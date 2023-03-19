@@ -10,6 +10,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
+            <asp:GridView ID="gvBoletim" runat="server"></asp:GridView>
         </div>
     </form>
 </body>
