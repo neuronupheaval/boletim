@@ -4,8 +4,22 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>Boletim</title>
+    <style type="text/css">
+        table {
+            margin: 8px auto;
+        }
+        th {
+            padding: 4px;
+            background-color: gray;
+            color: snow;
+            border: 1px solid snow;
+        }
+        td {
+            padding: 3px;
+        }
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
