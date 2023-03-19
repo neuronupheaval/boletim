@@ -12,8 +12,9 @@ namespace Boletim
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!this.IsPostBack)
+            if (!this.IsPostBack) // <-- Only populates the Grid View at first load.
             {
+                // Binding data to Grid View.
                 gvBoletim.DataSource = BoletinsAlunos.Dados;
                 gvBoletim.DataBind();
             }
