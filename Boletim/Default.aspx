@@ -26,7 +26,9 @@
         <div>
             <asp:Repeater ID="rptAlunos" runat="server">
                 <ItemTemplate>
+                    <hr />
                     <asp:Label ID="lblNome" runat="server" Text='<%# Eval("Key") %>' />
+                    <br />
                 </ItemTemplate>
             </asp:Repeater>
 
