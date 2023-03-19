@@ -1,7 +1,7 @@
 [bB]in/
 [oO]bj/
 .vs/
-[pP]ackage/
+[pP]ackages/
 *.suo
 *.user
 *.sln.docstates
