@@ -24,6 +24,12 @@
 <body>
     <form id="form1" runat="server">
         <div>
+            <asp:Repeater ID="rptAlunos" runat="server">
+                <ItemTemplate>
+                    <asp:Label ID="lblNome" runat="server" Text='<%# Eval("Key") %>' />
+                </ItemTemplate>
+            </asp:Repeater>
+
             <asp:GridView ID="gvBoletim" runat="server" AutoGenerateColumns="false" EmptyDataText="Nenhum aluno encontrado!">
                 <Columns>
                     <asp:BoundField DataField="Materia" HeaderText="Matéria" />
