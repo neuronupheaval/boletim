@@ -30,6 +30,15 @@
                     <asp:BoundField DataField="Nota1" HeaderText="1a. Nota" ItemStyle-HorizontalAlign="Right" />
                     <asp:BoundField DataField="Nota2" HeaderText="2a. Nota" ItemStyle-HorizontalAlign="Right" />
                     <asp:BoundField DataField="Nota3" HeaderText="3a. Nota" ItemStyle-HorizontalAlign="Right" />
+                    <asp:TemplateField HeaderText="Média" ItemStyle-HorizontalAlign="Right">
+                        <ItemTemplate>
+                            <%# Math.Round(
+                                    (
+                                        Convert.ToDouble(Eval("Nota1")) + Convert.ToDouble(Eval("Nota2")) + Convert.ToDouble(Eval("Nota3"))
+                                    ) / 3.0,
+                                0) %>
+                        </ItemTemplate>
+                    </asp:TemplateField>
                 </Columns>
             </asp:GridView>
         </div>
